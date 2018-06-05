@@ -33,12 +33,7 @@ import { EventBus } from '../event-bus';
 import { FullScreen } from "../fullscreen";
 
 let images = [
-  { "name": "", "url": require('../assets/001.png'), "raw": ""},
-  { "name": "", "url": require('../assets/002.png'), "raw": ""},
-  { "name": "", "url": require('../assets/003.jpg'), "raw": ""},
-  { "name": "", "url": require('../assets/004.jpg'), "raw": ""},
-  { "name": "", "url": require('../assets/005.jpg'), "raw": ""},
-  { "name": "", "url": require('../assets/006.jpg'), "raw": ""}
+  { "name": "", "url": require('../assets/001.png'), "raw": ""}
 ];
 let currentIndex = 0;
 
