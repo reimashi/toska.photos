@@ -75,6 +75,7 @@ export default {
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+  @import url('https://fonts.googleapis.com/css?family=Changa+One');
   @import './common.scss';
   @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
@@ -99,10 +100,10 @@ export default {
     }
 
     h1 {
-      font-family: 'PT Serif', serif;
-      font-weight: 600;
+      font-family: 'Changa One', cursive;
+      font-weight: 400;
       font-size: 4rem;
-      color: #777;
+      color: #555;
     }
   }
 
