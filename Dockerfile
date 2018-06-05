@@ -15,7 +15,7 @@ WORKDIR /app
 COPY . /app
 
 RUN yarn install --production=false
-RUN npm build
+RUN npm run build
 
 # Deploy runtime
 FROM nginx:stable-alpine
