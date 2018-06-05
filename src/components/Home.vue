@@ -33,7 +33,33 @@ import { EventBus } from '../event-bus';
 import { FullScreen } from "../fullscreen";
 
 let images = [
-  { "name": "", "url": require('../assets/001.png'), "raw": ""}
+  { "name": "", "url": require('../assets/001.png'), "raw": ""},
+  { "name": "", "url": require('../assets/002.png'), "raw": ""},
+  { "name": "", "url": require('../assets/003.png'), "raw": ""},
+  { "name": "", "url": require('../assets/004.png'), "raw": ""},
+  { "name": "", "url": require('../assets/005.png'), "raw": ""},
+  { "name": "", "url": require('../assets/006.png'), "raw": ""},
+  { "name": "", "url": require('../assets/007.png'), "raw": ""},
+  { "name": "", "url": require('../assets/008.png'), "raw": ""},
+  { "name": "", "url": require('../assets/009.png'), "raw": ""},
+  { "name": "", "url": require('../assets/010.png'), "raw": ""},
+  { "name": "", "url": require('../assets/011.png'), "raw": ""},
+  { "name": "", "url": require('../assets/012.png'), "raw": ""},
+  { "name": "", "url": require('../assets/013.png'), "raw": ""},
+  { "name": "", "url": require('../assets/014.png'), "raw": ""},
+  { "name": "", "url": require('../assets/015.png'), "raw": ""},
+  { "name": "", "url": require('../assets/016.png'), "raw": ""},
+  { "name": "", "url": require('../assets/017.png'), "raw": ""},
+  { "name": "", "url": require('../assets/018.png'), "raw": ""},
+  { "name": "", "url": require('../assets/019.png'), "raw": ""},
+  { "name": "", "url": require('../assets/020.png'), "raw": ""},
+  { "name": "", "url": require('../assets/021.png'), "raw": ""},
+  { "name": "", "url": require('../assets/022.png'), "raw": ""},
+  { "name": "", "url": require('../assets/023.png'), "raw": ""},
+  { "name": "", "url": require('../assets/024.png'), "raw": ""},
+  { "name": "", "url": require('../assets/025.png'), "raw": ""},
+  { "name": "", "url": require('../assets/026.png'), "raw": ""},
+  { "name": "", "url": require('../assets/027.png'), "raw": ""},
 ];
 let currentIndex = 0;
 
