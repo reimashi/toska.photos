@@ -1,0 +1,30 @@
+version: '3'
+services:
+  server:
+    image: reimashi/toska.photos:latest
+    restart: always
+    labels:
+      traefik.enable: "true"
+      traefik.port: "80"
+      traefik.frontend.rule: "Host:toska.photos,www.toska.photos,toska.aitorgf.com"
+      traefik.frontend.entryPoints: "http"
+      traefik.default.protocol: "http"
+      traefik.docker.network: "intranet"
+    networks:
+      - intranet
+      - internet
+  watchtower:
+    image: v2tec/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      REPO_USER: "reimashi"
+      REPO_PASS: ""
+    command: --interval 300
+networks:
+  intranet:
+    external:
+      name: intranet
+  internet:
+    external:
+      name: internet
