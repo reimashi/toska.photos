@@ -10,17 +10,21 @@ services:
       traefik.frontend.entryPoints: "http"
       traefik.default.protocol: "http"
       traefik.docker.network: "intranet"
+      com.centurylinklabs.watchtower.enable: "true"
     networks:
       - intranet
       - internet
   watchtower:
     image: v2tec/watchtower
+    restart: always
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       REPO_USER: "reimashi"
       REPO_PASS: ""
-    command: --interval 300
+    labels:
+      com.centurylinklabs.watchtower.enable: "true"
+    command: --cleanup --interval 3600 --label-enable
 networks:
   intranet:
     external:
